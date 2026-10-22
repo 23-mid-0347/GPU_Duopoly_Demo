@@ -1,0 +1,13 @@
+{
+  "_comment": "Illustrative baseline parameters for the GPU duopoly simulator. These are scenario inputs from the React prototype, NOT measured NVIDIA/AMD data. Do not use for any empirical claim.",
+  "status": "illustrative",
+  "A": 1400.0,
+  "B": 2.5,
+  "substitutability_ratio_D_over_B": 0.48,
+  "c1_nvidia": 550.0,
+  "c2_amd": 420.0,
+  "nvidia_output_cap": 120.0,
+  "quantity_unit_label": "model units (illustrative)",
+  "price_unit_label": "model price units (illustrative; not calibrated USD forecast)",
+  "notes": "Baseline values inherited from the React prototype (gpu-duopoly-model.jsx). They are illustrative placeholders only. D is derived as substitutability_ratio_D_over_B * B = 0.48 * 2.5 = 1.2."
+}
