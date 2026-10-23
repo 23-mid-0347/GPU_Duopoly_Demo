@@ -23,12 +23,7 @@ from utils.formatting import illustrative_note, payoff_disclaimer, feasibility_w
 
 st.set_page_config(page_title="Live Equilibrium — GPU Duopoly", layout="wide", page_icon="📊")
 
-# Status banner
-st.markdown("""
-<div style="background:#2a1a00;border:1px solid #c8a84b;border-radius:6px;
-padding:10px 18px;margin-bottom:22px;color:#c8a84b;font-weight:600;font-size:0.93em;">
-⚠️  ILLUSTRATIVE MODE — parameters are scenario inputs; not empirically calibrated
-</div>""", unsafe_allow_html=True)
+
 
 # Load defaults
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,8 +33,7 @@ with open(os.path.join(ROOT, "data", "illustrative_defaults.json")) as f:
 # ---------------------------------------------------------------------------
 # Sidebar: parameter controls
 # ---------------------------------------------------------------------------
-st.sidebar.header("⚙️ Model Parameters")
-st.sidebar.caption(illustrative_note())
+st.sidebar.header("⚙️ Parameters")
 
 A = st.sidebar.slider("Demand intercept A", min_value=500.0, max_value=3000.0,
                        value=float(DEFAULTS["A"]), step=50.0,

@@ -20,11 +20,7 @@ from utils.formatting import msrp_disclaimer
 
 st.set_page_config(page_title="Data & Validation — GPU Duopoly", layout="wide", page_icon="📁")
 
-st.markdown("""
-<div style="background:#2a1a00;border:1px solid #c8a84b;border-radius:6px;
-padding:10px 18px;margin-bottom:22px;color:#c8a84b;font-weight:600;font-size:0.93em;">
-⚠️  ILLUSTRATIVE MODE — parameters are scenario inputs; not empirically calibrated
-</div>""", unsafe_allow_html=True)
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

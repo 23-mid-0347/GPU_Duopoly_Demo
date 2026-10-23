@@ -11,12 +11,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Model & Equations — GPU Duopoly", layout="wide", page_icon="📐")
 
-# Status banner
-st.markdown("""
-<div style="background:#2a1a00;border:1px solid #c8a84b;border-radius:6px;
-padding:10px 18px;margin-bottom:22px;color:#c8a84b;font-weight:600;font-size:0.93em;">
-⚠️  ILLUSTRATIVE MODE — parameters are scenario inputs; not empirically calibrated
-</div>""", unsafe_allow_html=True)
+
 
 st.title("📐 Model Definition and Equations")
 
